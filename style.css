@@ -1160,6 +1160,21 @@ body {
     
     .birthday-girl-placeholder {
         font-size: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .birthday-girl-placeholder-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ff69b4;
+        box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+        margin-bottom: 15px;
     }
     
     .surprise-container {
@@ -1188,6 +1203,13 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 8px;
+    }
+    
+    .birthday-girl-placeholder-img {
+        width: 180px;
+        height: 180px;
+        border-width: 3px;
+        margin-bottom: 8px;
     }
     
     .main-title {
@@ -1393,6 +1415,13 @@ body {
 @media (max-width: 360px) {
     .container {
         padding: 5px;
+    }
+    
+    .birthday-girl-placeholder-img {
+        width: 150px;
+        height: 150px;
+        border-width: 2px;
+        margin-bottom: 5px;
     }
     
     .main-title {
@@ -1836,6 +1865,13 @@ body {
         font-size: 5rem;
     }
     
+    .birthday-girl-placeholder-img {
+        width: 300px;
+        height: 300px;
+        border-width: 6px;
+        margin-bottom: 20px;
+    }
+    
     .birthday-message {
         padding: 40px;
     }
@@ -2018,6 +2054,13 @@ body {
     
     .birthday-girl-placeholder {
         font-size: 6rem;
+    }
+    
+    .birthday-girl-placeholder-img {
+        width: 400px;
+        height: 400px;
+        border-width: 8px;
+        margin-bottom: 25px;
     }
     
     .birthday-message {
@@ -2204,6 +2247,16 @@ body {
     font-weight: 600;
 }
 
+.birthday-girl-placeholder-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ff6b9d;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+    margin-bottom: 15px;
+}
+
 .birthday-message {
     flex: 1;
     padding: 30px;
@@ -2295,6 +2348,13 @@ body {
     
     .birthday-girl-placeholder {
         font-size: 3rem;
+    }
+    
+    .birthday-girl-placeholder-img {
+        width: 200px;
+        height: 200px;
+        border-width: 4px;
+        margin-bottom: 10px;
     }
     
     .birthday-message {

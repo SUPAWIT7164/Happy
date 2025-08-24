@@ -802,7 +802,7 @@ function triggerFireworks() {
     for (let i = 0; i < 5; i++) {
         setTimeout(() => createFirework(), i * 1000);
     }
-    showMessage('🎆 พลุฉลองวันเกิด! สุขสันต์วันเกิดนะคะ! 🎆');
+    showMessage('🎆 พลุฉลองวันเกิด! สุขสันต์วันเกิดนะครับ! 🎆');
 }
 
 function createFirework() {
