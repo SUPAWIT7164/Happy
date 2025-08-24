@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday สาวน้อยที่รัก 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="birthday-header">
+            <div class="floating-balloons">
+                <div class="balloon balloon-1">🎈</div>
+                <div class="balloon balloon-2">🎈</div>
+                <div class="balloon balloon-3">🎈</div>
+            </div>
+            
+            <div class="title-section">
+                <h1 class="main-title">
+                    <span class="sparkle">✨</span>
+                    Happy Birthday
+                    <span class="sparkle">✨</span>
+                </h1>
+                <p class="subtitle">สาวน้อยที่น่ารักที่สุดในโลก 💕</p>
+            </div>
+        </header>
+
+        <!-- Characters Section -->
+        <section class="characters-section">
+            <div class="character-container">
+                <div class="character maruko">
+                    <div class="character-img">
+                        <img src="marukohap.jpg" alt="มารุโกะ" class="character-photo">
+                    </div>
+                    <p>มารุโกะส่งความสุขมาให้!</p>
+                </div>
+                
+                <div class="character reborn">
+                    <div class="character-img">
+                        <img src="rebornhap.jpg" alt="รีบอร์น" class="character-photo">
+                    </div>
+                    <p>รีบอร์นอวยพรให้เธอ!</p>
+                </div>
+                
+                <div class="character shinchan">
+                    <div class="character-img">
+                        <img src="shinchanhap.jpg" alt="ชินจัง" class="character-photo">
+                    </div>
+                    <p>ชินจังขอให้มีความสุขมากๆ!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Girl Section -->
+        <section class="birthday-girl-section">
+            <h2 class="section-title">🎂 เจ้าของวันเกิด 🎂</h2>
+            <div class="birthday-girl-container">
+                <div class="birthday-girl-photo">
+                    <img src="birthday-girl.jpg" alt="เจ้าของวันเกิด" class="birthday-girl-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="birthday-girl-placeholder" style="display: none;">
+                        👧🏻
+                        <p>เจ้าของวันเกิดสุดน่ารัก!</p>
+                    </div>
+                </div>
+                <div class="birthday-message">
+                    <h3>🌟 Happy Birthday 🌟</h3>
+                    <p>วันนี้เป็นวันพิเศษของเธอ ขอให้มีความสุขมากๆ เต็มไปด้วยรอยยิ้ม เสียงหัวเราะ และความทรงจำดีๆ ที่จะเก็บไว้ตลอดไป!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cheer Photos Section -->
+        <section class="cheer-photos-section">
+            <h2 class="section-title">📸 Happy Birthday To You Cute Girl 📸</h2>
+            <div class="cheer-gallery">
+                <div class="cheer-item">
+                    <img src="cheer1.jpg" alt="Cheer 1" class="cheer-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="cheer-placeholder" style="display: none;">🎉</div>
+                </div>
+                <div class="cheer-item">
+                    <img src="cheer2.jpg" alt="Cheer 2" class="cheer-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="cheer-placeholder" style="display: none;">🎊</div>
+                </div>
+                <div class="cheer-item">
+                    <img src="cheer3.jpg" alt="Cheer 3" class="cheer-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="cheer-placeholder" style="display: none;">🎈</div>
+                </div>
+                <div class="cheer-item">
+                    <img src="cheer4.jpg" alt="Cheer 4" class="cheer-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="cheer-placeholder" style="display: none;">🎁</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Wishes Section -->
+        <section class="wishes-section">
+            <div class="cake-container">
+                <div class="birthday-cake" id="birthday-cake">
+                    <div class="cake-base">🎂</div>
+                    <div class="candles" id="candles">
+                        <div class="candle">🕯️</div>
+                        <div class="candle">🕯️</div>
+                        <div class="candle">🕯️</div>
+                        <div class="candle">🕯️</div>
+                        <div class="candle">🕯️</div>
+                    </div>
+                    <div class="flames" id="flames">
+                        <div class="flame">🔥</div>
+                        <div class="flame">🔥</div>
+                        <div class="flame">🔥</div>
+                        <div class="flame">🔥</div>
+                        <div class="flame">🔥</div>
+                    </div>
+                </div>
+                <div class="cake-instructions">
+                    <p>🌬️ คลิกที่เค้กเพื่อเป่าเทียน! 🌬️</p>
+                    <p id="blow-message" class="blow-hint">ลองกดปุ่ม B หรือกดที่ไมโครโฟนเพื่อเป่าจริงๆ!</p>
+                </div>
+                <div class="blow-controls">
+                    <button class="blow-btn" onclick="blowCandles()" title="เป่าเทียน">🌬️ เป่าเทียน</button>
+                    <button class="mic-btn" onclick="toggleMicrophone()" title="ใช้ไมโครโฟน" id="mic-btn">🎤 ไมค์</button>
+                </div>
+            </div>
+            
+            <div class="wishes-text">
+                <h2>🌸 คำอวยพรพิเศษ 🌸</h2>
+                <div class="wish-card">
+                    <p>ขอให้วันเกิดปีนี้เป็นวันที่พิเศษที่สุด</p>
+                    <p>เต็มไปด้วยความสุข เสียงหัวเราะ และรอยยิ้มสดใส</p>
+                    <p>ขอให้ทุกความฝันเป็นจริง</p>
+                    <p>และมีแต่สิ่งดีๆ เข้ามาในชีวิต</p>
+                    <p class="special-wish">💖 ขอให้เป็นสาวที่น่ารักแบบนี้ตลอดไป 💖</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Games Section -->
+
+
+        <!-- Photo Frame Section -->
+        <section class="photo-section">
+            <h2 class="section-title">📸 กรอบรูปพิเศษ 📸</h2>
+            <div class="photo-frame-container">
+                <div class="photo-frame">
+                    <div class="photo-area" id="photo-area">
+                        <div class="placeholder-text">คลิกเพื่อเพิ่มรูปภาพ</div>
+                        <input type="file" id="photo-input" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="frame-decorations">
+                        <div class="frame-corner top-left">🌸</div>
+                        <div class="frame-corner top-right">🌸</div>
+                        <div class="frame-corner bottom-left">🌸</div>
+                        <div class="frame-corner bottom-right">🌸</div>
+                    </div>
+                </div>
+                <div class="photo-controls">
+                    <button class="frame-btn" onclick="triggerPhotoUpload()">📷 เพิ่มรูป</button>
+                    <button class="frame-btn" onclick="addPhotoFilter('sepia')">🌅 ฟิลเตอร์</button>
+                    <button class="frame-btn" onclick="addPhotoFilter('blur')">✨ เบลอ</button>
+                    <button class="frame-btn" onclick="addPhotoFilter('brightness')">☀️ สว่าง</button>
+                    <button class="frame-btn" onclick="clearPhotoFilters()">🔄 รีเซ็ต</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Elements Section -->
+        <section class="surprise-section">
+            <h2 class="section-title">🎁 ของขวัญเซอร์ไพรส์ 🎁</h2>
+            <div class="surprise-container">
+                <div class="surprise-box" onclick="openSurpriseBox(1)">
+                    <div class="box-lid">🎁</div>
+                    <div class="box-content">❓</div>
+                </div>
+                <div class="surprise-box" onclick="openSurpriseBox(2)">
+                    <div class="box-lid">🎁</div>
+                    <div class="box-content">❓</div>
+                </div>
+                <div class="surprise-box" onclick="openSurpriseBox(3)">
+                    <div class="box-lid">🎁</div>
+                    <div class="box-content">❓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown-section">
+            <h2 class="section-title">⏰ เคาท์ดาวน์พิเศษ ⏰</h2>
+            <div class="countdown-container">
+                <p>เวลาที่เหลือสำหรับความสุขในวันนี้:</p>
+                <div class="countdown-display" id="countdown">
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">23</span>
+                        <span class="time-label">ชั่วโมง</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">59</span>
+                        <span class="time-label">นาที</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">59</span>
+                        <span class="time-label">วินาที</span>
+                    </div>
+                </div>
+                <button class="game-btn" onclick="triggerFireworks()">🎆 จุดพลุฉลอง</button>
+            </div>
+        </section>
+
+        <!-- Flowers Section -->
+        <section class="flowers-section">
+            <div class="flower-garden">
+                <div class="flower flower-1">🌸</div>
+                <div class="flower flower-2">🌺</div>
+                <div class="flower flower-3">🌹</div>
+                <div class="flower flower-4">🌻</div>
+                <div class="flower flower-5">🌷</div>
+                <div class="flower flower-6">🌼</div>
+                <div class="flower flower-7">💐</div>
+                <div class="flower flower-8">🌸</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="birthday-footer">
+            <p>วันเกิดนี้ขอให้มีแต่ความสุขและรอยยิ้มนะครับคนเก่ง
+            <div class="celebration">🎉 🎊 🎈 🎂 🎁 🎊 🎉</div>
+        </footer>
+    </div>
+
+    <!-- Floating elements -->
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <div class="music-player">
+            <button class="music-btn" onclick="toggleMusic()" id="music-toggle">🎵 เพลง</button>
+            <div class="volume-control">
+                <button onclick="adjustVolume(-0.1)">🔉</button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5" onchange="setVolume(this.value)">
+                <button onclick="adjustVolume(0.1)">🔊</button>
+            </div>
+        </div>
+        <audio id="birthday-song" preload="auto" controls>
+            <source src="Happy Birthday song Romantic version romantic piano version.mp3" type="audio/mpeg">
+            <source src="./Happy Birthday song Romantic version romantic piano version.mp3" type="audio/mpeg">
+            <source src="Happy%20Birthday%20song%20Romantic%20version%20romantic%20piano%20version.mp3" type="audio/mpeg">
+            เบราว์เซอร์ของคุณไม่รองรับเสียง
+        </audio>
+        
+
+    </div>
+
+    <div class="floating-elements">
+        <div class="floating-heart heart-1">💕</div>
+        <div class="floating-confetti confetti-1">🎊</div>
+        <div class="floating-confetti confetti-2">🎉</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
